@@ -35,16 +35,6 @@
 			path = BRIK;
 			sourceTree = "<group>";
 		};
-		27A585DE2E37EC4A0052201E /* BRIKTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BRIKTests;
-			sourceTree = "<group>";
-		};
-		27A585E82E37EC4A0052201E /* BRIKUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BRIKUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				27A585CF2E37EC480052201E /* BRIK */,
-				27A585DE2E37EC4A0052201E /* BRIKTests */,
-				27A585E82E37EC4A0052201E /* BRIKUITests */,
 				27A585CE2E37EC480052201E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				27A585DD2E37EC4A0052201E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				27A585DE2E37EC4A0052201E /* BRIKTests */,
-			);
 			name = BRIKTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				27A585E72E37EC4A0052201E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				27A585E82E37EC4A0052201E /* BRIKUITests */,
 			);
 			name = BRIKUITests;
 			packageProductDependencies = (
@@ -195,6 +177,9 @@
 			);
 			mainGroup = 27A585C42E37EC470052201E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				27A585F82E37F4490052201E /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27A585CE2E37EC480052201E /* Products */;
 			projectDirPath = "";
@@ -583,6 +568,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27A585F82E37F4490052201E /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 27A585C52E37EC470052201E /* Project object */;
 }
