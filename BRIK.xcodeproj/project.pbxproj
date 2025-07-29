@@ -6,30 +6,83 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		27A585DC2E37EC4A0052201E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27A585C52E37EC470052201E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 27A585CC2E37EC480052201E;
-			remoteInfo = BRIK;
-		};
-		27A585E62E37EC4A0052201E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 27A585C52E37EC470052201E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 27A585CC2E37EC480052201E;
-			remoteInfo = BRIK;
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		2795A0B32E3816FC00E56BE8 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 2795A0B22E3816FC00E56BE8 /* Auth */; };
+		2795A0B52E3816FC00E56BE8 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 2795A0B42E3816FC00E56BE8 /* Functions */; };
+		2795A0B72E3816FC00E56BE8 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 2795A0B62E3816FC00E56BE8 /* PostgREST */; };
+		2795A0B92E3816FC00E56BE8 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 2795A0B82E3816FC00E56BE8 /* Realtime */; };
+		2795A0BB2E3816FC00E56BE8 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 2795A0BA2E3816FC00E56BE8 /* Storage */; };
+		2795A0D32E388E5600E56BE8 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2795A0D22E388E5600E56BE8 /* Supabase */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27A585CD2E37EC480052201E /* BRIK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRIK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		27A585DB2E37EC4A0052201E /* BRIKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRIKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27A585E52E37EC4A0052201E /* BRIKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRIKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		270CC4DF2E38155900E4F2A3 /* Exceptions for "Models" folder in "BRIK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				User.swift,
+			);
+			target = 27A585CC2E37EC480052201E /* BRIK */;
+		};
+		273E06E12E37FF7100EE1E7B /* Exceptions for "Config" folder in "BRIK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Secrets.swift,
+			);
+			target = 27A585CC2E37EC480052201E /* BRIK */;
+		};
+		273E06E32E37FF7800EE1E7B /* Exceptions for "Services" folder in "BRIK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SupabaseService.swift,
+			);
+			target = 27A585CC2E37EC480052201E /* BRIK */;
+		};
+		273E06E52E37FF7D00EE1E7B /* Exceptions for "Views" folder in "BRIK" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				UserListView.swift,
+			);
+			target = 27A585CC2E37EC480052201E /* BRIK */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		273E06CE2E37FE8C00EE1E7B /* Config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				273E06E12E37FF7100EE1E7B /* Exceptions for "Config" folder in "BRIK" target */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		273E06D12E37FE9900EE1E7B /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				273E06E32E37FF7800EE1E7B /* Exceptions for "Services" folder in "BRIK" target */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		273E06D32E37FE9C00EE1E7B /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				270CC4DF2E38155900E4F2A3 /* Exceptions for "Models" folder in "BRIK" target */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		273E06D52E37FE9F00EE1E7B /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				273E06E52E37FF7D00EE1E7B /* Exceptions for "Views" folder in "BRIK" target */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		27A585CF2E37EC480052201E /* BRIK */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BRIK;
@@ -42,30 +95,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27A585D82E37EC4A0052201E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27A585E22E37EC4A0052201E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				2795A0B72E3816FC00E56BE8 /* PostgREST in Frameworks */,
+				2795A0B52E3816FC00E56BE8 /* Functions in Frameworks */,
+				2795A0D32E388E5600E56BE8 /* Supabase in Frameworks */,
+				2795A0B32E3816FC00E56BE8 /* Auth in Frameworks */,
+				2795A0BB2E3816FC00E56BE8 /* Storage in Frameworks */,
+				2795A0B92E3816FC00E56BE8 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273E06C62E37FD7B00EE1E7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2795A0D42E388E6300E56BE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27A585C42E37EC470052201E = {
 			isa = PBXGroup;
 			children = (
+				273E06CE2E37FE8C00EE1E7B /* Config */,
+				273E06C62E37FD7B00EE1E7B /* Helpers */,
+				273E06D12E37FE9900EE1E7B /* Services */,
+				273E06D32E37FE9C00EE1E7B /* Models */,
+				273E06D52E37FE9F00EE1E7B /* Views */,
 				27A585CF2E37EC480052201E /* BRIK */,
+				2795A0D42E388E6300E56BE8 /* Frameworks */,
 				27A585CE2E37EC480052201E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,8 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				27A585CD2E37EC480052201E /* BRIK.app */,
-				27A585DB2E37EC4A0052201E /* BRIKTests.xctest */,
-				27A585E52E37EC4A0052201E /* BRIKUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,56 +157,28 @@
 			buildRules = (
 			);
 			dependencies = (
+				2795A0C92E3817D000E56BE8 /* PBXTargetDependency */,
+				2795A0CB2E3817D000E56BE8 /* PBXTargetDependency */,
+				2795A0CD2E3817D000E56BE8 /* PBXTargetDependency */,
+				2795A0CF2E3817D000E56BE8 /* PBXTargetDependency */,
+				2795A0D12E3817D000E56BE8 /* PBXTargetDependency */,
+				2795A0C72E38170F00E56BE8 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				27A585CF2E37EC480052201E /* BRIK */,
 			);
 			name = BRIK;
 			packageProductDependencies = (
+				2795A0B22E3816FC00E56BE8 /* Auth */,
+				2795A0B42E3816FC00E56BE8 /* Functions */,
+				2795A0B62E3816FC00E56BE8 /* PostgREST */,
+				2795A0B82E3816FC00E56BE8 /* Realtime */,
+				2795A0BA2E3816FC00E56BE8 /* Storage */,
+				2795A0D22E388E5600E56BE8 /* Supabase */,
 			);
 			productName = BRIK;
 			productReference = 27A585CD2E37EC480052201E /* BRIK.app */;
 			productType = "com.apple.product-type.application";
-		};
-		27A585DA2E37EC4A0052201E /* BRIKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 27A585F22E37EC4A0052201E /* Build configuration list for PBXNativeTarget "BRIKTests" */;
-			buildPhases = (
-				27A585D72E37EC4A0052201E /* Sources */,
-				27A585D82E37EC4A0052201E /* Frameworks */,
-				27A585D92E37EC4A0052201E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27A585DD2E37EC4A0052201E /* PBXTargetDependency */,
-			);
-			name = BRIKTests;
-			packageProductDependencies = (
-			);
-			productName = BRIKTests;
-			productReference = 27A585DB2E37EC4A0052201E /* BRIKTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		27A585E42E37EC4A0052201E /* BRIKUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 27A585F52E37EC4A0052201E /* Build configuration list for PBXNativeTarget "BRIKUITests" */;
-			buildPhases = (
-				27A585E12E37EC4A0052201E /* Sources */,
-				27A585E22E37EC4A0052201E /* Frameworks */,
-				27A585E32E37EC4A0052201E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27A585E72E37EC4A0052201E /* PBXTargetDependency */,
-			);
-			name = BRIKUITests;
-			packageProductDependencies = (
-			);
-			productName = BRIKUITests;
-			productReference = 27A585E52E37EC4A0052201E /* BRIKUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -158,14 +193,6 @@
 					27A585CC2E37EC480052201E = {
 						CreatedOnToolsVersion = 16.4;
 					};
-					27A585DA2E37EC4A0052201E = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 27A585CC2E37EC480052201E;
-					};
-					27A585E42E37EC4A0052201E = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 27A585CC2E37EC480052201E;
-					};
 				};
 			};
 			buildConfigurationList = 27A585C82E37EC480052201E /* Build configuration list for PBXProject "BRIK" */;
@@ -178,7 +205,7 @@
 			mainGroup = 27A585C42E37EC470052201E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				27A585F82E37F4490052201E /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27A585CE2E37EC480052201E /* Products */;
@@ -186,28 +213,12 @@
 			projectRoot = "";
 			targets = (
 				27A585CC2E37EC480052201E /* BRIK */,
-				27A585DA2E37EC4A0052201E /* BRIKTests */,
-				27A585E42E37EC4A0052201E /* BRIKUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		27A585CB2E37EC480052201E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27A585D92E37EC4A0052201E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27A585E32E37EC4A0052201E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,32 +235,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27A585D72E37EC4A0052201E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27A585E12E37EC4A0052201E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27A585DD2E37EC4A0052201E /* PBXTargetDependency */ = {
+		2795A0C72E38170F00E56BE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27A585CC2E37EC480052201E /* BRIK */;
-			targetProxy = 27A585DC2E37EC4A0052201E /* PBXContainerItemProxy */;
+			productRef = 2795A0C62E38170F00E56BE8 /* Supabase */;
 		};
-		27A585E72E37EC4A0052201E /* PBXTargetDependency */ = {
+		2795A0C92E3817D000E56BE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27A585CC2E37EC480052201E /* BRIK */;
-			targetProxy = 27A585E62E37EC4A0052201E /* PBXContainerItemProxy */;
+			productRef = 2795A0C82E3817D000E56BE8 /* Auth */;
+		};
+		2795A0CB2E3817D000E56BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2795A0CA2E3817D000E56BE8 /* Functions */;
+		};
+		2795A0CD2E3817D000E56BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2795A0CC2E3817D000E56BE8 /* PostgREST */;
+		};
+		2795A0CF2E3817D000E56BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2795A0CE2E3817D000E56BE8 /* Realtime */;
+		};
+		2795A0D12E3817D000E56BE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 2795A0D02E3817D000E56BE8 /* Storage */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,10 +408,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -434,96 +446,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Release;
-		};
-		27A585F32E37EC4A0052201E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorrit.BRIKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRIK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BRIK";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Debug;
-		};
-		27A585F42E37EC4A0052201E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorrit.BRIKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BRIK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BRIK";
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Release;
-		};
-		27A585F62E37EC4A0052201E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorrit.BRIKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = BRIK;
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Debug;
-		};
-		27A585F72E37EC4A0052201E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorrit.BRIKUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = BRIK;
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
@@ -549,28 +476,10 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27A585F22E37EC4A0052201E /* Build configuration list for PBXNativeTarget "BRIKTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				27A585F32E37EC4A0052201E /* Debug */,
-				27A585F42E37EC4A0052201E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		27A585F52E37EC4A0052201E /* Build configuration list for PBXNativeTarget "BRIKUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				27A585F62E37EC4A0052201E /* Debug */,
-				27A585F72E37EC4A0052201E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		27A585F82E37F4490052201E /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+		2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase-community/supabase-swift";
 			requirement = {
@@ -579,6 +488,69 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2795A0B22E3816FC00E56BE8 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		2795A0B42E3816FC00E56BE8 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		2795A0B62E3816FC00E56BE8 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		2795A0B82E3816FC00E56BE8 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		2795A0BA2E3816FC00E56BE8 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		2795A0C62E38170F00E56BE8 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		2795A0C82E3817D000E56BE8 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		2795A0CA2E3817D000E56BE8 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		2795A0CC2E3817D000E56BE8 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		2795A0CE2E3817D000E56BE8 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		2795A0D02E3817D000E56BE8 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		2795A0D22E388E5600E56BE8 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2795A0B12E3816FC00E56BE8 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27A585C52E37EC470052201E /* Project object */;
 }
